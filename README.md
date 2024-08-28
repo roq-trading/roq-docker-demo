@@ -1,6 +1,6 @@
 # roq-docker-demo
 
-Demonstrates how to install and use Roq services from inside a container.
+Demonstrates how to install several Roq services into container image and how to manage these using Supervisor.
 
 
 ## Prerequisites
@@ -23,17 +23,18 @@ docker build --no-cache --tag test:1 .
 
 ## Using
 
-> You should update the Deribit login and secret in the `config/` directory before starting the container.
+> You should update the Deribit login and secret in the relevant files of the `config` directory before starting the container.
 
 The following command will
 
-* Launch Supervisor to manage the Roq services
+* Mount the `config` directory (with your specific credentials) into the container
+* Mount the `data` directory into the container
+* Expose Supervisor's web interface on port `9001`
+* Expose Roq's FIX-Bridge on port `1234`
+* Start Supervisor
+* Start Roq's Journal
 * Start Roq's Deribit gateway
 * Start Roq's FIX-Bridge
-* Enable Supervisor's web interface on port 9001 (for monitoring logs and managing services)
-* Make Roq's FIX-Bridge available on port 1234
-* Share the `config/` directory (with your specific credentials) into the container
-* Share the `data/` directory into the container (certain data must be persisted, e.g. user id's)
 
 ```bash
 docker run -it \
