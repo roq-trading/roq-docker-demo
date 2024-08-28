@@ -17,11 +17,7 @@ symbols = [
 
 [users]
 
-  [users.test]
-  password = "1234"
-  symbols = ".*"
-
-  [users.trader]
+  [users.fix-bridge]
   password = "secret"
   accounts = [ "A1" ]
   symbols = [ ".*BTC.*", ".*ETH.*" ]

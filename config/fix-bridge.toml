@@ -1,0 +1,22 @@
+[symbols]
+  regex="USD.*"  # optional, used to subscribe funds
+
+  [symbols.deribit]
+  regex=".*"
+
+
+[users]
+
+  [users.MD1]
+  component="fix-client"
+  username="fix-md-sub-1"
+
+  [users.MD2]
+  component="fix-client"
+  username="fix-md-sub-2"
+
+  [users.OM1]
+  component="fix-client"
+  username="fix-trader"
+  password="secret"
+  account="A1"
