@@ -13,9 +13,10 @@ fi
 echo "Using $MANAGER"
 
 $MANAGER run -it \
-    --publish 9001:9001 \
-    --publish 1234:1234 \
+    --env ROQ_DATABASE_URI=http://localhost:8123 \
     --volume ./config:/config:ro \
     --volume ./data:/data \
+    --publish 9001:9001 \
+    --publish 1234:1234 \
     $IMAGE \
     $@
