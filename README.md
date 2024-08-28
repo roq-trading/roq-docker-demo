@@ -39,8 +39,8 @@ The following command will
 docker run -it \
     --publish 9001:9001 \
     --publish 1234:1234 \
-    --volume ./config:/etc/roq:ro \
-    --volume ./data:/var/lib/roq \
+    --volume ./config:/config:ro \
+    --volume ./data:/data \
     test:1
 ```
 
