@@ -77,6 +77,10 @@ Follow the instructions from [here](https://roq-trading.com/docs/reference/gatew
 Yes.
 The gateway will function for a short period before it automatically shuts down.
 
+### How can I collect events?
+
+Add the gateway `--event_log_dir` flag.
+
 
 ## License
 
