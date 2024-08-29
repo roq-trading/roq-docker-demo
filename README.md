@@ -57,6 +57,16 @@ docker run -it \
 ```
 
 
+## FAQ
+
+### Can I deploy the services using different container images?
+
+Yes.
+You should expose the relevant port(s) if the services communicate using tcp or udp.
+You should mount the '/run/roq' directory and share it between containers if the services communicate
+ using unix sockets and shared memory.
+
+
 ## License
 
 The project is released under the terms of the MIT license.
