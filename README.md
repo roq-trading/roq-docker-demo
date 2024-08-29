@@ -64,7 +64,18 @@ docker run -it \
 Yes.
 You should expose the relevant port(s) if the services communicate using tcp or udp.
 You should mount the '/run/roq' directory and share it between containers if the services communicate
- using unix sockets and shared memory.
+using unix sockets and shared memory.
+
+### How do I generate Roq's authentication keys?
+
+Follow the instructions from [here](https://roq-trading.com/docs/reference/gateways/flags/#authentication).
+
+> Please note that you will have to contact Roq to register your key.
+
+### Can I use this without a valid license key?
+
+Yes.
+The gateway will function for a short period before it automatically shuts down.
 
 
 ## License
