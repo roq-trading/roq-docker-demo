@@ -2,6 +2,8 @@
 
 Demonstrates how to install several Roq services into container image and how to manage these using Supervisor.
 
+![Design](/static/images/docker.webp)
+
 
 ## Prerequisites
 
@@ -40,6 +42,7 @@ The following command will
 ```bash
 docker run -it \
     --env ROQ_DATABASE_URI=http://localhost:8123 \
+    --env ROQ_DATABASE_NAME=roq \
     --volume ./config:/config:ro \
     --volume ./data:/data \
     --publish 9001:9001 \

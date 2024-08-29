@@ -36,11 +36,17 @@ ADD config/supervisord.conf /etc/supervisord.conf
 
 EXPOSE 1234/tcp 9001/tcp
 
+# note!
+#   reasonable flags for this demo
+#   you may override these by mounting your own configuration into the flags directory
+
 ADD config/*.cfg $ROQ_FLAGS_DIR
 
 # note!
-#   these are just config examples (non-valid credentials)
-#   you should mount your own configuration into this directory
+#   although these are reasonable config examples, **THE CREDENTIALS ARE NOT VALID**
+#   **YOU SHOULD MOUNT YOUR OWN CONFIGURATION** into the config directory
+
+COPY config/keys.json $ROQ_CONF_DIR
 ADD config/*.toml $ROQ_CONF_DIR
 
 CMD /usr/local/bin/supervisord.sh --nodaemon --pidfile /run/supervisord

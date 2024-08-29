@@ -14,6 +14,7 @@ echo "Using $MANAGER"
 
 $MANAGER run -it \
     --env ROQ_DATABASE_URI=http://localhost:8123 \
+    --env ROQ_DATABASE_NAME=roq \
     --volume ./config:/config:ro \
     --volume ./data:/data \
     --publish 9001:9001 \
