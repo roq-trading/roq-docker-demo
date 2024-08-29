@@ -17,7 +17,7 @@ symbols = [
 
 [users]
 
-  [users.position_manager]
+  [users.position-manager]
   password = "secret"
   drop_copy = true
 
