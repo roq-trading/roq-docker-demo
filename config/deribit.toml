@@ -17,6 +17,10 @@ symbols = [
 
 [users]
 
+  [users.position_manager]
+  password = "secret"
+  drop_copy = true
+
   [users.fix-bridge]
   password = "secret"
   accounts = [ "A1" ]
