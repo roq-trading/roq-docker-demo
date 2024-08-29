@@ -1,5 +1,8 @@
 # roq-docker-demo
 
+> This is **NOT** a low-latency configuration.
+> You should install on physical and use the core-pinning features, if that is your concern.
+
 Demonstrates how to install several Roq services into container image and how to manage these using Supervisor.
 
 ![Design](/static/images/docker.png)
