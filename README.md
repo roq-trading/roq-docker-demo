@@ -8,7 +8,7 @@ Demonstrates how to install several Roq services into container image and how to
 
 ## Design
 
-![Design](/static/images/docker.png)
+![Design](/static/images/docker-demo.png)
 
 
 ## Prerequisites
