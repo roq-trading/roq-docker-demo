@@ -2,7 +2,7 @@
 
 Demonstrates how to install several Roq services into container image and how to manage these using Supervisor.
 
-![Design](/static/images/docker.webp)
+![Design](/static/images/docker.svg)
 
 
 ## Prerequisites
